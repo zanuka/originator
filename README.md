@@ -1,2 +1,2 @@
-# erroronious-monk
+# errors
 Explorations in Error Tracking
