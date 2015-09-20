@@ -6,8 +6,11 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "nyc node test.js | faucet && zuul --local 9966 -- test.js",
-    "ci": "node test.js && zuul -- test.js"
+    "ci": "node test.js && zuul -- test.js",
+    "test": "node test.js | faucet && zuul --local 9966 -- test.js",
+    "coverage": "istanbul cover --report none --print detail test/index.js",
+    "view-coverage": "istanbul report html && open ./coverage/index.html",
+    "travis": "npm run coverage -s && istanbul report lcov && ((cat coverage/lcov.info | coveralls) || exit 0)"
   },
   "repository": {
     "type": "git",
@@ -29,11 +32,10 @@
     "eslint": "^1.2.0",
     "eslint-config-xo": "^0.3.1",
     "faucet": "0.0.1",
-    "tap-dot": "^1.0.0",
+    "istanbul": "^0.3.20",
+    "istanbul-coveralls": "^1.0.3",
     "tape": "^4.2.0",
     "zuul": "^3.4.0"
   },
-  "dependencies": {
-    "nyc": "^3.2.2"
-  }
+  "dependencies": {}
 }
