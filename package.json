@@ -1,6 +1,6 @@
 {
   "name": "freestyle",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "simple freestyle setup",
   "author": "zanuka",
   "main": "index.js",
@@ -22,8 +22,9 @@
   "keywords": [
     "javascript",
     "module",
-    "template",
-    "test",
+    "node",
+    "starter",
+    "kit",
     "tape",
     "zuul",
     "istanbul"
