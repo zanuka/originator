@@ -5,12 +5,12 @@
 
 ##### dependencies include:
  
-- **Coveralls** - [coveralls](https://github.com/nickmerwin/node-coveralls) - <sub><sup>Coveralls.io support for node.js.</sup></sub>
+- [**coveralls**](https://github.com/nickmerwin/node-coveralls) - test coverage and history statistics support for node.js.
 
-- **Test Harness** - [tape](https://github.com/substack/tape) - <sub><sup>tap-producing test harness for node and browsers</sup></sub>
+- [**tape**](https://github.com/substack/tape) - tap-producing test harness for node and browsers
 
-- **Browser Testing** - [zuul](https://github.com/defunctzombie/zuul) - <sub><sup>multi-framework javascript browser testing</sup></sub>
+- [**zuul**](https://github.com/defunctzombie/zuul) - multi-framework javascript browser testing
 
-- **Code Coverage** - [istanbul](https://github.com/gotwarlost/istanbul) - <sub><sup>multi-framework javascript browser testing</sup></sub>
+- [**istanbul**](https://github.com/gotwarlost/istanbul) - multi-framework javascript browser testing
 
 
