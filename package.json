@@ -13,7 +13,7 @@
     "coveralls": "npm run coverage -s && istanbul report lcov && ((cat coverage/lcov.info | coveralls) || exit 0)"
   },
   "repository": {
-    "type": "git",
+    "type": "git",  
     "url": "git+https://github.com/zanuka/freestyle.git"
   },
   "bugs": {
@@ -21,9 +21,12 @@
   },
   "keywords": [
     "javascript",
+    "module",
+    "template",
     "test",
     "tape",
-    "zuul"
+    "zuul",
+    "istanbul"
   ],
   "license": "MIT",
   "homepage": "https://github.com/zanuka/freestyle#readme",
