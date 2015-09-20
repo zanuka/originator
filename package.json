@@ -26,6 +26,7 @@
   "license": "MIT",
   "homepage": "https://github.com/zanuka/freestyle#readme",
   "devDependencies": {
+    "coveralls": "^2.11.4",
     "eslint": "^1.2.0",
     "eslint-config-xo": "^0.3.1",
     "tape": "^4.2.0",
