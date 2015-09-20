@@ -8,9 +8,9 @@
   "scripts": {
     "ci": "node test.js && zuul -- test.js",
     "test": "node test.js | faucet && zuul --local 9966 -- test.js",
-    "coverage": "istanbul cover --report none --print detail test/index.js",
+    "coverage": "istanbul cover --report none --print detail index.js",
     "view-coverage": "istanbul report html && open ./coverage/index.html",
-    "travis": "npm run coverage -s && istanbul report lcov && ((cat coverage/lcov.info | coveralls) || exit 0)"
+    "coveralls": "npm run coverage -s && istanbul report lcov && ((cat coverage/lcov.info | coveralls) || exit 0)"
   },
   "repository": {
     "type": "git",
