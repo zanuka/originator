@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "simple freestyle setup",
   "author": "zanuka",
-  "main": "lib/freestyle.js",
+  "main": "index.js",
   "private": true,
   "scripts": {
     "test": "node test.js && zuul --local 9966 -- test.js",
