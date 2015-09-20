@@ -6,8 +6,8 @@
   "main": "lib/freestyle.js",
   "private": true,
   "scripts": {
-    "test": "node test.js && zuul --ui tape",
-    "start": "node index.js"
+    "test": "node test.js && zuul --local 9966 -- test.js",
+    "ci": "node test.js && zuul -- test.js"
   },
   "repository": {
     "type": "git",
