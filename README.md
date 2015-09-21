@@ -11,6 +11,6 @@
 
 - [**zuul**](https://github.com/defunctzombie/zuul) - multi-framework javascript browser testing
 
-- [**istanbul**](https://github.com/gotwarlost/istanbul) - multi-framework javascript browser testing
+- [**istanbul**](https://github.com/gotwarlost/istanbul) - JS code coverage tool
 
 
