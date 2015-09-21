@@ -6,13 +6,18 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "ci": "node test/.js && zuul -- test.js",
+    "ci": "node test/*test.js && zuul -- test/*test.js",
+    "dev": "babel-node src/index.es6",
     "lint": "eslint src/**/*.es6",
     "compile": "babel --stage 0 -d dist/ src/",
-    "test": "node test/*.test.js | faucet && zuul --local 9966 -- test/*.test.js",
-    "coverage": "istanbul cover --report none --print detail index.js",
+    "prepublish": "npm run compile",
+    "tape": "babel-node test/*.test.js | faucet && zuul --local 9966 -- test/*.test.js",
+    "coverage": "istanbul cover --report none --print detail src/index.js",
     "view-coverage": "istanbul report html && open ./coverage/index.html",
-    "coveralls": "npm run coverage -s && istanbul report lcov && ((cat coverage/lcov.info | coveralls) || exit 0)"
+    "istanbul": "npm run compile && istanbul cover --dir coverage/istanbul test/*test.js --report lcovonly",
+    "coverage": "npm run compile && istanbul cover --dir coverage/istanbul test/*test.js --report html",
+    "coveralls": "npm run coverage -s && istanbul report lcov && ((cat coverage/lcov.info | coveralls) || exit 0)",
+    "test": "npm run istanbul && npm run coveralls"
   },
   "repository": {
     "type": "git",

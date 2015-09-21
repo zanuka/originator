@@ -1,19 +1,13 @@
 export class Freestyle {
 
-  constructor(n,t) {
+  constructor(n) {
     const nameObj = this._setName(n)
-    const typeObj = this._setType(t)
+    console.log('nameObj', nameObj)
   }
 
   _setName(n) {
     return {
       name: n
-    }
-  }
-
-  _setType(t) {
-    return {
-      type: t
     }
   }
 
