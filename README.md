@@ -12,5 +12,7 @@
 - [**zuul**](https://github.com/defunctzombie/zuul) - multi-framework javascript browser testing
 
 - [**istanbul**](https://github.com/gotwarlost/istanbul) - JS code coverage tool
+ 
+- [**sauce connect**](http://docs.travis-ci.com/user/sauce-connect/) - Used to create tunnel allowing [Travis CI](https://travis-ci.org/) to utilize [Sauce Labs](https://saucelabs.com), a browser and mobile testing platform.
 
 
