@@ -6,14 +6,16 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "ci": "node test.js && zuul -- test.js",
-    "test": "node test.js | faucet && zuul --local 9966 -- test.js",
+    "ci": "node test/.js && zuul -- test.js",
+    "lint": "eslint src/**/*.es6",
+    "compile": "babel --stage 0 -d dist/ src/",
+    "test": "node test/*.test.js | faucet && zuul --local 9966 -- test/*.test.js",
     "coverage": "istanbul cover --report none --print detail index.js",
     "view-coverage": "istanbul report html && open ./coverage/index.html",
     "coveralls": "npm run coverage -s && istanbul report lcov && ((cat coverage/lcov.info | coveralls) || exit 0)"
   },
   "repository": {
-    "type": "git",  
+    "type": "git",
     "url": "git+https://github.com/zanuka/freestyle.git"
   },
   "bugs": {
@@ -32,13 +34,17 @@
   "license": "MIT",
   "homepage": "https://github.com/zanuka/freestyle#readme",
   "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-core": "^5.8.25",
+    "babel-loader": "^5.3.2",
     "coveralls": "^2.11.4",
-    "eslint": "^1.2.0",
-    "eslint-config-xo": "^0.3.1",
+    "eslint": "^1.5.0",
+    "eslint-config-xo": "^0.6.0",
     "faucet": "0.0.1",
     "istanbul": "^0.3.20",
     "istanbul-coveralls": "^1.0.3",
     "tape": "^4.2.0",
+    "webpack": "^1.12.2",
     "zuul": "^3.4.0"
   },
   "dependencies": {}

@@ -1,0 +1,17 @@
+{
+  "extends": "xo/esnext",
+  "rules": {
+    "consistent-return": 0,
+    "indent": [2, 2],
+    "no-new": 0,
+    "no-trailing-spaces": 0,
+    "prefer-reflect": 0,
+    "semi": [1, "never"],
+    "space-before-function-paren": [2, "never"]
+  },
+  "env": {
+    "browser": true,
+    "mocha": true,
+    "node": true
+  }
+}
