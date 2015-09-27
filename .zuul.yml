@@ -6,4 +6,6 @@ browsers:
     version: latest
   - name: safari
     version: latest
-    
+browserify:
+  - transform:
+      name: babelify
