@@ -15,4 +15,15 @@
  
 - [**sauce connect**](http://docs.travis-ci.com/user/sauce-connect/) - Used to create tunnel allowing [Travis CI](https://travis-ci.org/) to utilize [Sauce Labs](https://saucelabs.com), a browser and mobile testing platform.
 
+### Shell Install
+In your workspace, make a new directory and install via cURL:
+```bash
+mkdir [your-dir-name]
+cd [your-dir-name]
+curl -fsSL https://github.com/zanuka/freestyle/archive/master.tar.gz | tar -xz --strip-components=1 freestyle-master
+npm i
+git init
+```
+
+
 
