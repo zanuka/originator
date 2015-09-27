@@ -1,4 +1,4 @@
-export class Freestyle {
+export class Originator {
 
   constructor(n) {
     const nameObj = this._setName(n)

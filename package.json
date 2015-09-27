@@ -22,7 +22,7 @@
     "test": "babel-node test/*.js | tspec"
   },
   "bugs": {
-    "url": "https://github.com/zanuka/freestyle/issues"
+    "url": "https://github.com/zanuka/originator/issues"
   },
   "keywords": [
     "javascript",
