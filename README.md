@@ -2,6 +2,8 @@
 
 #### es6 node module template with test config
 
+##### work in progress... should be up and running this week
+
 ##### stack includes:
  
 - [**coveralls**](https://github.com/nickmerwin/node-coveralls) - test coverage and history statistics support for node.js.
