@@ -8,7 +8,7 @@
  
 - [**coveralls**](https://github.com/nickmerwin/node-coveralls) - test coverage and history statistics support for node.js.
 
-- [**tape**](https://github.com/substack/tape) - tap-producing test harness for node and browsers
+- [**blue-tape**](https://github.com/spion/blue-tape) - tape with promise support
 
 - [**zuul**](https://github.com/defunctzombie/zuul) - multi-framework javascript browser testing
 
