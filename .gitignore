@@ -5,5 +5,5 @@ node_modules
 logs
 *.log
 coverage
-dist/
-lib/
+dist
+lib
