@@ -4,7 +4,15 @@
 
 ##### work in progress... should be up and running this week
 
-##### stack includes:
+##### npm scripts:
+
+`npm test` runs eslint and tests with results piped to formatted TAP output using [tap-spec](https://github.com/scottcorgan/tap-spec).
+
+`npm run zuul` runs browser tests via zuul at `http://localhost:9966/__zuul`
+
+`npm compile` using babel, compiles es6 from `src/` to es5 in `dist/`
+
+##### dev stack includes:
  
 - [**coveralls**](https://github.com/nickmerwin/node-coveralls) - test coverage and history statistics support for node.js.
 

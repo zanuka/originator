@@ -2,8 +2,6 @@ sudo: false
 language: node_js
 node_js:
   - '0.12'
-  - 'iojs'
-  - '4.1.0'
 script: npm run ci
 addons:
   sauce_connect: true
