@@ -1,6 +1,21 @@
 import {Originator} from '../src/index'
-import test from 'tape'
+import test from 'blue-tape'
 
-test('should write some tests', function(assert) {
-  assert.end()
-})
+test('exports a class', t => {
+  t.equal(typeof Originator, 'function');
+  t.end();
+});
+
+test('throws if instantiated improperly', t => {
+  t.throws(() => {
+    Originator();
+  });
+  t.end();
+});
+
+test('does not throw if instantiated properly', t => {
+  t.doesNotThrow(() => {
+    new Originator();
+  });
+  t.end();
+});

@@ -14,12 +14,13 @@
     "url": "https://github.com/zanuka"
   },
   "scripts": {
-    "ci": "babel-node test/*test.js && zuul -- test/*test.js",
+    "ci": "babel-node test/*.test.js && zuul -- test/*.test.js",
     "dev": "babel-node src/index.es6",
     "lint": "eslint src/**/*.es6",
     "compile": "babel --stage 0 -d dist/ src/",
     "prepublish": "npm run compile",
-    "test": "babel-node test/*.js | tspec"
+    "start": "webpack --watch",
+    "test": "babel-node test/*.test.js | tspec && zuul --local 9966 -- test/*.test.js"
   },
   "bugs": {
     "url": "https://github.com/zanuka/originator/issues"
@@ -35,12 +36,13 @@
     "zuul",
     "istanbul"
   ],
-  "license": "MIT",
   "homepage": "https://github.com/zanuka/originator#readme",
   "devDependencies": {
     "babel": "^5.8.23",
     "babel-core": "^5.8.25",
     "babel-loader": "^5.3.2",
+    "babelify": "^6.3.0",
+    "blue-tape": "^0.1.10",
     "coveralls": "^2.11.4",
     "eslint": "^1.5.0",
     "eslint-config-xo": "^0.6.0",
@@ -48,7 +50,6 @@
     "istanbul": "^0.3.20",
     "istanbul-coveralls": "^1.0.3",
     "tap-spec": "^4.1.0",
-    "tape": "^4.2.0",
     "webpack": "^1.12.2",
     "zuul": "^3.4.0"
   },
