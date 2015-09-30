@@ -2,7 +2,8 @@
 
 #### es6 node module template with test config
 
-##### work in progress... should be up and running this week
+##### this is a work in progress
+experimenting with various setups until i get it just right
 
 ##### npm scripts:
 
