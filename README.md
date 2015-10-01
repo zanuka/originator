@@ -3,9 +3,6 @@
 
 #### es6 node module template with test config
 
-##### this is a work in progress
-experimenting with various setups until i get it just right
-
 ##### npm scripts:
 
 `npm test` runs eslint and tests with results piped to formatted TAP output using [tap-spec](https://github.com/scottcorgan/tap-spec).
