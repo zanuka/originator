@@ -28,13 +28,17 @@
   },
   "keywords": [
     "javascript",
-    "module",
     "node",
+    "module",
     "babel",
     "starter",
     "kit",
     "tape",
-    "zuul"
+    "zuul",
+    "istanbul",
+    "coveralls",
+    "sauce",
+    "labs"
   ],
   "homepage": "https://github.com/zanuka/originator#readme",
   "devDependencies": {
