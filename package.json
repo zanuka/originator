@@ -13,16 +13,17 @@
     "url": "https://github.com/zanuka"
   },
   "scripts": {
+    "watch": "./node_modules/.bin/babel src -d lib --experimental -w",
     "audit": "nsp package",
     "validate": "npm run audit & npm outdated --depth 0",
     "ci": "babel-node test/*.test.js && zuul -- test/*.test.js",
     "clean": "rm -rf lib coverage",
     "compile": "babel --stage 0 -d lib/ src/",
     "test": "babel-node ./node_modules/.bin/blue-tape test/*.test.js | tspec",
-    "cover": "npm run compile && babel-node ./node_modules/.bin/istanbul cover ./node_modules/.bin/blue-tape ./lib/*.js --report html --dir ./coverage && npm run clean",
+    "cover": "npm run compile && babel-node ./node_modules/.bin/istanbul cover ./node_modules/.bin/blue-tape ./lib/*.js --report text-summary && npm run clean",
+    "report": "npm run compile && babel-node ./node_modules/.bin/istanbul cover ./node_modules/.bin/blue-tape ./lib/*.js --report html && open ./coverage/index.html",
     "coveralls": "npm run compile && babel-node ./node_modules/.bin/istanbul cover ./node_modules/.bin/blue-tape ./lib/*.js --report lcovonly && cat ./coverage/lcov.info | coveralls  && npm run clean",
-    "zuul": "babel-tape-runner test/*.test.js && zuul --local 9966 -- test/*.test.js",
-    "watch": "./node_modules/.bin/babel src -d lib --experimental -w"
+    "zuul": "babel-tape-runner test/*.test.js && zuul --local 9966 -- test/*.test.js"
   },
   "bugs": {
     "url": "https://github.com/zanuka/originator/issues"

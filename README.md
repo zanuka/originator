@@ -3,17 +3,28 @@
 
 #### node module originator + tape test config & ci pipeline
 
-##### WORK IN PROGRESS... making this a generator... stay tuned
-
 ##### npm scripts:
 
-`npm test` runs eslint and tests with results piped to formatted TAP output using [tap-spec](https://github.com/scottcorgan/tap-spec).
+`watch` - starts file watcher
 
-`npm run zuul` runs browser tests via zuul at `http://localhost:9966/__zuul`
+`test` - runs eslint and tests with results piped to formatted TAP output using [tap-spec](https://github.com/scottcorgan/tap-spec).
 
-`npm run watch` starts file watcher
+`validate` - runs nsp package audit and checks for outdated npm packages
 
-`npm compile` using babel, compiles es6 from `src/` to es5 in `dist/`
+`ci` - Travis CI integration + zuul multi-framework & browser tests
+
+`clean` - cleans out `/lib` and `/coverage` directories
+
+`compile` - compiles es6 in `/src` to es5 in `/lib` using babel
+
+`cover` - generates code coverage text-summary report in terminal
+
+`report` - generates code coverage html report and opens it in browser
+
+`coveralls` - runs code coverage and sends report to coveralls
+
+`zuul` runs browser tests via zuul at `http://localhost:9966/__zuul`
+
 
 ##### devDependencies:
 
