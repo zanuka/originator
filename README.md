@@ -1,7 +1,7 @@
 # originator
  [![Build Status](https://travis-ci.org/zanuka/originator.svg)](https://travis-ci.org/zanuka/originator) [![Coverage Status](https://coveralls.io/repos/zanuka/originator/badge.svg?branch=master&service=github)](https://coveralls.io/github/zanuka/originator?branch=master)
 
-#### es6 node module template with test config 
+#### node module originator + tape test config & ci pipeline
 
 ##### WORK IN PROGRESS... making this a generator... stay tuned
 
