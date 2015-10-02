@@ -3,7 +3,7 @@
 
 #### es6 node module template with test config 
 
-### WORK IN PROGRESS... stay tuned
+##### WORK IN PROGRESS... making this a generator... stay tuned
 
 ##### npm scripts:
 
