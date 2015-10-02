@@ -1,7 +1,7 @@
 {
   "name": "originator",
   "version": "0.0.4",
-  "description": "node module originator",
+  "description": "node module originator with test & ci pipeline",
   "license": "MIT",
   "main": "src/index.js",
   "repository": {
@@ -16,11 +16,11 @@
     "audit": "nsp package",
     "validate": "npm run audit & npm outdated --depth 0",
     "ci": "babel-node test/*.test.js && zuul -- test/*.test.js",
-    "clean": "rm -rf lib",
+    "clean": "rm -rf lib coverage",
     "compile": "babel --stage 0 -d lib/ src/",
     "test": "babel-node ./node_modules/.bin/blue-tape test/*.test.js | tspec",
-    "cover": "babel-node ./node_modules/.bin/istanbul cover ./node_modules/.bin/blue-tape ./lib/*.js --report html --dir ./coverage",
-    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
+    "cover": "npm run compile && babel-node ./node_modules/.bin/istanbul cover ./node_modules/.bin/blue-tape ./lib/*.js --report html --dir ./coverage && npm run clean",
+    "coveralls": "npm run compile && babel-node ./node_modules/.bin/istanbul cover ./node_modules/.bin/blue-tape ./lib/*.js --report lcovonly && cat ./coverage/lcov.info | coveralls  && npm run clean",
     "zuul": "babel-tape-runner test/*.test.js && zuul --local 9966 -- test/*.test.js",
     "watch": "./node_modules/.bin/babel src -d lib --experimental -w"
   },
