@@ -10,17 +10,16 @@
   },
   "author": {
     "name": "zanuka",
-    "email": "git@zanuka.com",
     "url": "https://github.com/zanuka"
   },
   "scripts": {
     "ci": "babel-node test/*.test.js && zuul -- test/*.test.js",
     "clean": "rm -rf lib",
     "compile": "babel --stage 0 -d lib/ src/",
-    "test": "eslint src/*.js && babel-node test/*.test.js | tspec",
+    "test": "eslint src/*.js && babel-tape-runner test/*.test.js | tspec",
     "coverage": "istanbul cover babel-node test/*.test.js",
     "coveralls": "cat ./coverage/istanbul/lcov.info | coveralls && rm -rf ./coverage",
-    "zuul": "babel-node test/*.test.js && zuul --local 9966 -- test/*.test.js",
+    "zuul": "babel-tape-runner test/*.test.js && zuul --local 9966 -- test/*.test.js",
     "watch": "./node_modules/.bin/babel src -d lib --experimental -w"
   },
   "bugs": {
@@ -42,9 +41,11 @@
   ],
   "homepage": "https://github.com/zanuka/originator#readme",
   "devDependencies": {
+    "babel": "^5.8.23",
     "babel-core": "^5.8.25",
     "babel-eslint": "^4.1.3",
     "babel-istanbul": "^0.3.20",
+    "babel-tape-runner": "^1.2.0",
     "babelify": "^6.3.0",
     "blue-tape": "^0.1.10",
     "coveralls": "^2.11.4",
