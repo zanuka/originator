@@ -20,7 +20,7 @@
     "compile": "babel --stage 0 -d lib/ src/",
     "test": "babel-node ./node_modules/.bin/blue-tape test/*.test.js | tspec",
     "cover": "babel-node ./node_modules/.bin/istanbul cover ./node_modules/.bin/blue-tape ./lib/*.js --report html --dir ./coverage",
-    "coveralls": "cat ./coverage/istanbul/lcov.info | coveralls && rm -rf ./coverage",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
     "zuul": "babel-tape-runner test/*.test.js && zuul --local 9966 -- test/*.test.js",
     "watch": "./node_modules/.bin/babel src -d lib --experimental -w"
   },
