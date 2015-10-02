@@ -32,8 +32,6 @@
  
 - [**babel-eslint**](https://github.com/babel/babel-eslint) - ESLint using Babel as the parser
 
-- [**babel-istanbul**](https://github.com/ambitioninc/babel-istanbul) - handles coverage for babel generated code by reconciling babel's output and its source map
- 
 - [**babelify**](https://github.com/babel/babelify) - Browserify transform for Babel. Used in multi-framework testing with zuul.
 
 - [**blue-tape**](https://github.com/spion/blue-tape) - substack's tape test runner with promise support
