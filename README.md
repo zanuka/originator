@@ -34,6 +34,10 @@
 - [**eslint-config-xo**](https://github.com/sindresorhus/eslint-config-xo) - ESLint shareable config for XO
  
 - [**eslint-plugin-babel**](https://github.com/babel/eslint-plugin-babel) - an eslint rule plugin companion to babel-eslint
+ 
+- [**istanbul**](https://github.com/gotwarlost/istanbul) - excellent JS code coverage tool
+
+- [**nsp**](https://github.com/nodesecurity/nsp) - check if using packages with known and public vulnerable dependencies provided by the [Node Security Project](https://nodesecurity.io/)
 
 - [**tap-spec**](https://github.com/scottcorgan/tap-spec) - formatted TAP output
 
