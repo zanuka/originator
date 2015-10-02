@@ -16,7 +16,7 @@
     "ci": "babel-node test/*.test.js && zuul -- test/*.test.js",
     "clean": "rm -rf lib",
     "compile": "babel --stage 0 -d lib/ src/",
-    "test": "eslint src/*.js && babel-tape-runner test/*.test.js | tspec",
+    "test": "babel-tape-runner test/*.test.js | tspec",
     "coverage": "istanbul cover babel-node test/*.test.js",
     "coveralls": "cat ./coverage/istanbul/lcov.info | coveralls && rm -rf ./coverage",
     "zuul": "babel-tape-runner test/*.test.js && zuul --local 9966 -- test/*.test.js",
