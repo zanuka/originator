@@ -1,6 +1,6 @@
 {
   "name": "originator",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "node module originator with test & ci pipeline",
   "license": "MIT",
   "main": "src/index.js",
