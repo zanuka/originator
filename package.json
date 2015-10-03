@@ -33,18 +33,18 @@
     "url": "https://github.com/zanuka/originator/issues"
   },
   "keywords": [
+    "es6",
+    "babel",
     "javascript",
     "node",
     "module",
     "babel",
-    "starter",
-    "kit",
     "tape",
     "zuul",
     "istanbul",
     "coveralls",
-    "sauce",
-    "labs"
+    "sauce labs",
+    "ci pipeline"
   ],
   "homepage": "https://github.com/zanuka/originator#readme",
   "devDependencies": {

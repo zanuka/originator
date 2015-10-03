@@ -1,24 +1,22 @@
 # originator
  [![Build Status](https://travis-ci.org/zanuka/originator.svg)](https://travis-ci.org/zanuka/originator) [![Coverage Status](https://coveralls.io/repos/zanuka/originator/badge.svg?branch=master&service=github)](https://coveralls.io/github/zanuka/originator?branch=master)
 
-#### node module originator + tape test config & ci pipeline
+#### es6 node module + tape + ci pipeline + npm scripts
 
-## Install
+## install
 
 ```sh
 npm i originator -D
 ```
 
-
-## Usage
+## usage
 
 ```js
 import {Originator} from 'originator'
 new Originator() // true
 ```
 
-
-##### npm scripts:
+## scripts
 
 `watch` - starts file watcher
 
@@ -38,12 +36,12 @@ new Originator() // true
 
 `coveralls` - runs code coverage and sends report to coveralls
 
-`zuul` runs browser tests via zuul at `http://localhost:9966/__zuul`
+`zuul` - runs browser tests via zuul at `http://localhost:9966/__zuul`
 
-`deploy` rebase and push to master
+`deploy` - rebase and push to master
 
 
-##### devDependencies:
+## devDependencies:
 
 - [**babel**](https://github.com/babel/babel) - compiler for writing next generation JavaScript
  
@@ -61,9 +59,11 @@ new Originator() // true
  
 - [**eslint-plugin-babel**](https://github.com/babel/eslint-plugin-babel) - an eslint rule plugin companion to babel-eslint
  
-- [**istanbul**](https://github.com/gotwarlost/istanbul) - excellent JS code coverage tool
+- [**istanbul**](https://github.com/gotwarlost/istanbul) - excellent coverage tool
 
-- [**nsp**](https://github.com/nodesecurity/nsp) - check if using packages with known and public vulnerable dependencies provided by the [Node Security Project](https://nodesecurity.io/)
+- [**nsp**](https://github.com/nodesecurity/nsp) - check for bad packages
+
+- [**rimraf**](https://github.com/isaacs/rimraf) - remove stuff
 
 - [**tap-spec**](https://github.com/scottcorgan/tap-spec) - formatted TAP output
 
