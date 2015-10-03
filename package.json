@@ -14,7 +14,7 @@
   },
   "scripts": {
     "watch": "./node_modules/.bin/babel src -d lib --experimental -w",
-    "clean": "rimraf lib",
+    "clean": "rimraf ./lib ./coverage",
     "lint": "eslint src",
     "audit": "nsp package",
     "validate": "npm run audit & npm outdated --depth 0",
