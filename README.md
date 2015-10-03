@@ -3,6 +3,21 @@
 
 #### node module originator + tape test config & ci pipeline
 
+## Install
+
+```sh
+npm i originator -D
+```
+
+
+## Usage
+
+```js
+import {Originator} from 'originator'
+new Originator() // true
+```
+
+
 ##### npm scripts:
 
 `watch` - starts file watcher
@@ -24,6 +39,8 @@
 `coveralls` - runs code coverage and sends report to coveralls
 
 `zuul` runs browser tests via zuul at `http://localhost:9966/__zuul`
+
+`deploy` rebase and push to master
 
 
 ##### devDependencies:
