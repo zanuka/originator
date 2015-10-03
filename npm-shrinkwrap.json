@@ -1,6 +1,6 @@
 {
   "name": "originator",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "dependencies": {
     "babel": {
       "version": "5.8.23",
