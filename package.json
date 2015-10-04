@@ -28,24 +28,24 @@
     "postcoveralls": "rimraf coverage",
     "postpublish": "git push origin master --follow-tags",
     "deploy": "git pull --rebase origin master && git push origin master",
-    "zuul": "babel-tape-runner test/*.test.js && zuul --local 9966 -- test/*.test.js"
+    "zuul": "babel-node test/*.test.js && zuul --local 9966 -- test/*.test.js"
   },
   "bugs": {
     "url": "https://github.com/zanuka/originator/issues"
   },
   "keywords": [
     "es6",
-    "babel",
-    "javascript",
     "node",
-    "module",
     "babel",
-    "tape",
-    "zuul",
-    "istanbul",
+    "module",
+    "blue-tape",
+    "javascript",
+    "babel-istanbul",
+    "sauce connect",
     "coveralls",
-    "sauce labs",
-    "ci pipeline"
+    "travis",
+    "zuul",
+    "nsp"
   ],
   "homepage": "https://github.com/zanuka/originator#readme",
   "devDependencies": {
@@ -59,7 +59,6 @@
     "eslint": "^1.5.0",
     "eslint-config-xo": "^0.6.0",
     "eslint-plugin-babel": "^2.1.1",
-    "isparta": "^3.1.0",
     "nsp": "^1.1.0",
     "rimraf": "^2.4.3",
     "tap-spec": "^4.1.0",
