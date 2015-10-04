@@ -7,15 +7,11 @@
 
 `watch` - starts file watcher
 
-`test` - runs eslint and tests with results piped to formatted TAP output using [tap-spec](https://github.com/scottcorgan/tap-spec).
+`lint` - runs eslint on `/src`
 
-`validate` - runs nsp package audit and checks for outdated npm packages
+`test` - runs tests and formats piped TAP output with [tap-spec](https://github.com/scottcorgan/tap-spec).
 
 `ci` - Travis CI integration + zuul multi-framework & browser tests
-
-`clean` - cleans out `/lib` and `/coverage` directories
-
-`compile` - compiles es6 in `/src` to es5 in `/lib` using babel
 
 `cover` - generates code coverage text-summary report in terminal
 
@@ -25,7 +21,7 @@
 
 `zuul` - runs browser tests via zuul at `http://localhost:9966/__zuul`
 
-`deploy` - rebase and push to master
+`validate` - runs nsp package audit and checks for outdated npm packages
 
 
 ## devDependencies:
@@ -56,7 +52,9 @@
 
 - [**zuul**](https://github.com/defunctzombie/zuul) - multi-framework javascript browser testing
 
-##### Sauce Connect 
-Used to create tunnel allowing [Travis CI](https://travis-ci.org/) to utilize [Sauce Labs](https://saucelabs.com), a browser and mobile testing platform.
+
+## Additional Configuration
+
+- [**Sauce Connect**](https://docs.saucelabs.com/reference/sauce-connect/) -  Used to create tunnel allowing [Travis CI](https://travis-ci.org/) to utilize [Sauce Labs](https://saucelabs.com), a browser and mobile testing platform.
 
 

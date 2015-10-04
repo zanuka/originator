@@ -56,7 +56,7 @@
     "babelify": "^6.3.0",
     "blue-tape": "^0.1.10",
     "coveralls": "^2.11.4",
-    "eslint": "^1.5.0",
+    "eslint": "^1.6.0",
     "eslint-config-xo": "^0.6.0",
     "eslint-plugin-babel": "^2.1.1",
     "nsp": "^1.1.0",
