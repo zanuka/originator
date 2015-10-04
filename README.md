@@ -3,20 +3,7 @@
 
 #### es6 node module + tape + ci pipeline + npm scripts
 
-## install
-
-```sh
-npm i originator -D
-```
-
-## usage
-
-```js
-import {Originator} from 'originator'
-new Originator() // true
-```
-
-## scripts
+## npm scripts
 
 `watch` - starts file watcher
 

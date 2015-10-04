@@ -9,9 +9,12 @@
     "semi": [1, "never"],
     "space-before-function-paren": [2, "never"]
   },
+  "parser": "babel-eslint",
   "env": {
-    "browser": true,
-    "mocha": true,
-    "node": true
+    "node": true,
+    "es6": true
+  },
+  "emcaFeatures": {
+    "modules": true
   }
 }
