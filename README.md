@@ -21,12 +21,6 @@
 
 `zuul` - runs browser tests via zuul at `http://localhost:9966/__zuul`
 
-`check` - runs `nsp check` to identify known package vulnerabilities
-
-`outdated` - check package.json for oudated module dependencies
-
-`audit` - runs both `check` and `outdated`
-
 ## devDependencies:
 
 - [**babel**](https://github.com/babel/babel) - compiler for writing next generation JavaScript
