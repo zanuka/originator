@@ -2,6 +2,10 @@
  [![Build Status](https://travis-ci.org/zanuka/originator.svg)](https://travis-ci.org/zanuka/originator) [![Coverage Status](https://coveralls.io/repos/zanuka/originator/badge.svg?branch=master&service=github)](https://coveralls.io/github/zanuka/originator?branch=master)
 
 #### es6 node module starter
+This is currently intended to be cloned as a starter template for a new node module. The npm package will be turned into a module generator or cli tool in future release.
+
+## install
+`git clone https://github.com/zanuka/originator.git`
 
 ## npm scripts
 
