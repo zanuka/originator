@@ -5,7 +5,7 @@
 This is currently intended to be cloned as a starter template for a new node module. The npm package will be turned into a module generator or cli tool in future release.
 
 ## install
-`git clone https://github.com/zanuka/originator.git`
+`git clone https://github.com/zanuka/originator.git your-module-name`
 
 ## npm scripts
 
