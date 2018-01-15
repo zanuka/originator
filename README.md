@@ -1,5 +1,10 @@
 # originator
-_NOTE: this repo was just to serve as a utility/backup for my module template experiments and is really pretty phased out and outdated at this point. still feeling some of the styles but take it with a grain of salt since so much has changed since the time of initial commits. -Mike_
+
+![alt text](images/originator.jpg "Time Off Cowboy")
+
+artwork === [time off cowboy](http://www.artcountrycanada.com/mayer-denis-TIME%20OFF%20COWBOY.htm) by Denis Mayer
+
+_note: this repo was just to serve as a utility/backup for my module template experiments and is quite outdated at this point. Take it with a few grains of salt since so much has changed since the time of initial commits. - mdelucchi_
 
 #### es6 node module starter
 This is currently intended to be cloned as a starter template for a new node module. The npm package will be turned into a module generator or cli tool in future release.
