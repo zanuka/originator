@@ -1,15 +1,12 @@
 # originator
+[![Known Vulnerabilities](https://snyk.io/test/github/mdelucchi/originator/badge.svg?targetFile=package.json)](https://snyk.io/test/github/mdelucchi/originator?targetFile=package.json)
 
-![alt text](images/originator.jpg "Time Off Cowboy")
+![](./img/originator.png)
 
-artwork === [time off cowboy](http://www.artcountrycanada.com/mayer-denis-TIME%20OFF%20COWBOY.htm) by Denis Mayer
+## intent
+This is currently intended to be cloned as a starter template for a new node module. It was created to serve as a utility/backup for my module template experiments and is a bit outdated now.
 
-_note: this repo was just to serve as a utility/backup for my module template experiments and is quite outdated at this point. Take it with a few grains of salt since so much has changed since the time of initial commits. - mdelucchi_
-
-#### es6 node module starter
-This is currently intended to be cloned as a starter template for a new node module.
-
-## install
+## usage
 `git clone https://github.com/mdelucchi/originator.git your-module-name`
 
 ## npm scripts
