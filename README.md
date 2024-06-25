@@ -3,6 +3,9 @@
 
 ![](./img/originator.png)
 
+## [deprecated]
+at this point this thing is ancient history, not recommended for modern use ;-)
+
 ## intent
 This is currently intended to be cloned as a starter template for a new node module. It was created to serve as a utility/backup for my module template experiments and is a bit outdated now.
 
