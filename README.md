@@ -1,3 +1,5 @@
+
+
 # originator
 [![Known Vulnerabilities](https://snyk.io/test/github/mdelucchi/originator/badge.svg?targetFile=package.json)](https://snyk.io/test/github/mdelucchi/originator?targetFile=package.json)
 
@@ -72,12 +74,9 @@ Best bet if you're a new Travis and/or Sauce Labs user is to follow their steps 
 ## Publishing
 When you are ready to publish a new version of your module, the following steps can be used:
   1. add and commit your changes via git
-  2. `npm version patch -m "Ugrade message..."`
+  2. `npm version patch -m "Upgrade message..."`
   3. `npm publish`
 
 If publish is a success, the `postpublish` npm script will run `git push origin master --follow-tags`, pushing up and tagging your code properly.
 
 If you run `npm version patch` before committing your changes, you'll get a message like `npm ERR! Git working directory not clean.`. Commit and retry.
-
-
-
